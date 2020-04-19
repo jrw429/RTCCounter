@@ -150,6 +150,8 @@ uint32_t RTCCounter::getAlarmEpoch()
 {
   if (_configured) {
     return getAlarmY2kEpoch() + EPOCH_TIME_OFF;
+  } else {
+    return -1;
   }
 }
 
